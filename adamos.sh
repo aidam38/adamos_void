@@ -2,15 +2,17 @@
 # Automatic instalation script of adamos - Void linux based operation system with dwm, st, ranger ... for personal use of Adam Krivka
 # IMPORTANT: Make sure you run this script as the default user (you) and as 'sudo'
 
-# Clone dotfiles from github
+# %%%%%
+echo "Cloning dotfiles from github."
 cd /home/adam
 git clone --depth 1 https://github.com/aidam38/adamos_void /home/adam &>/dev/null
 
-# Disabling services for obsolete ttys
+# %%%%%
+echo "Disabling services for obsolete ttys" 
 cd /var/service
 rm -f agetty-tty3 & rm -f agetty-tty4 & rm -f agetty-tty5 & rm -f agetty-tty6 &>/dev/null
 
-# Disabling grub login menu and setting up automatic login
+# %%%%%
 echo "Disabling grub os prober and setting up automatic login"
 cp -R /home/adam/scripts/install/agetty-autologin-tty1 /etc/sv/ &>/dev/null
 ln -s /etc/sv/agetty-autologin-tty1 /var/service 
@@ -18,6 +20,10 @@ rm /var/service/agetty-tty1 &>/dev/null
 
 cp -f /home/adam/scripts/install/grub /etc/default/grub
 update-grub &>/dev/null
+
+# %%%%%
+echo "Allowing user to run reboot, poweroff and shutdown without password"
+cp -f /home/adam/scripts/install/sudoers /etc/sudoers
 
 # Synchronizing the package system and installing basic programs
 xbps-install -Suv &>/dev/null

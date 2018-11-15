@@ -5,6 +5,7 @@ libX11-devel
 libXft-devel
 libXinerama-devel
 numlockx
+compton
 make
 nvim
 ranger
@@ -15,5 +16,6 @@ mupdf
 mpv
 grive2
 dunst
-pulseaudio
+alsa-utils
 ImageMagick
+pulseaudio
