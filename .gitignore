@@ -12,4 +12,4 @@
 !.gitignore
 !adamos.sh
 !programs
-./config/chromium
+./config/chromium/*
