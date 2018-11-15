@@ -1,0 +1,13 @@
+/*
+!.config/
+!.scripts/
+!.wallpapers/
+!.bash_profile
+!.bashrc
+!.fehbg
+!.Xresources
+!README.md
+!.gitconfig
+!.gitmodules
+!.gitignore
+./config/chromium

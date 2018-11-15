@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --bg-scale '/home/adam/.wallpapers/bg1.jpg' 
