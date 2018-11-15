@@ -10,4 +10,6 @@
 !.gitconfig
 !.gitmodules
 !.gitignore
+!adamos.sh
+!programs
 ./config/chromium

@@ -1,0 +1,15 @@
+base-devel
+xorg-minimal
+xorg-fonts
+libX11-devel
+libXft-devel
+libXinerama-devel
+git
+make
+nvim
+ranger
+qutebrowser
+feh
+zathura
+mupdf
+mpv
