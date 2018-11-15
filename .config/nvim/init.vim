@@ -1,5 +1,5 @@
 set encoding=utf-8
-set clipboard=unnamed
+set clipboard=unnamedplus
 set relativenumber
 
 execute pathogen#infect()
