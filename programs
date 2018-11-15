@@ -4,7 +4,7 @@ xorg-fonts
 libX11-devel
 libXft-devel
 libXinerama-devel
-git
+numlockx
 make
 nvim
 ranger
@@ -13,3 +13,7 @@ feh
 zathura
 mupdf
 mpv
+grive2
+dunst
+pulseaudio
+ImageMagick
