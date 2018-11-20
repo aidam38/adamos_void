@@ -16,6 +16,7 @@ xrdb
 xmodmap
 xev
 setxkbmap
+font-inconsolata-otf
 compton
 neovim
 ranger
@@ -26,7 +27,7 @@ zathura
 mupdf
 mpv
 pulseaudio
-pulsemixer
+pamixer
 grive2
 dunst
 ImageMagick

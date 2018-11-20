@@ -32,7 +32,7 @@ xbps-install -Suv &>/dev/null
 while IFS=, read -r program; do
 	echo "(xbps) Installing " $program
 	xbps-install -Sy $program &>/dev/null
-done < programs;
+done < /home/adam/scripts/install/programs;
 
 # Installing dwm, st and dmenu from git repositories (some programs are my own forks)
 cd /home/adam
